@@ -30,6 +30,7 @@ A modern, responsive dashboard for visualizing GitHub and GitHub Actions Key Per
 - **Build Tool**: Vite 6
 - **Styling**: Tailwind CSS (via CDN)
 - **Charts**: Recharts 3.2
+- **Testing**: Jasmine 5 + Karma 6 (Unit Testing)
 - **Package Manager**: npm
 
 ## 📋 Prerequisites
@@ -61,27 +62,42 @@ A modern, responsive dashboard for visualizing GitHub and GitHub Actions Key Per
    npm run dev
    ```
 
-5. **Open in browser**
+5. **Run tests** *(optional)*
+   ```bash
+   npm test
+   ```
+
+6. **Open in browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
 ```
-├── components/              # React components
-│   ├── AutomationSection.tsx   # Automation KPIs
-│   ├── CollaborationSection.tsx # Collaboration KPIs  
-│   ├── DevelopmentSection.tsx   # Development KPIs
-│   ├── SecuritySection.tsx     # Security KPIs
-│   ├── KpiCard.tsx             # Reusable KPI card component
-│   ├── SectionTitle.tsx        # Section header component
-│   └── icons.tsx               # SVG icon components
-├── data/                   # Mock data and types
-│   └── mockData.ts            # Sample KPI data
+├── src/                    # Source code (moved from root)
+│   ├── components/         # React components
+│   │   ├── AutomationSection.tsx   # Automation KPIs
+│   │   ├── CollaborationSection.tsx # Collaboration KPIs  
+│   │   ├── DevelopmentSection.tsx   # Development KPIs
+│   │   ├── SecuritySection.tsx     # Security KPIs
+│   │   ├── KpiCard.tsx             # Reusable KPI card component
+│   │   ├── SectionTitle.tsx        # Section header component
+│   │   └── icons.tsx               # SVG icon components
+│   ├── data/               # Mock data and types
+│   │   └── mockData.ts            # Sample KPI data
+│   ├── App.tsx            # Main application component
+│   └── types.ts           # TypeScript type definitions
+├── tests/                 # Unit tests with Jasmine
+│   ├── simple.spec.js            # Basic functionality tests
+│   ├── components.spec.js         # Component logic tests
+│   └── setup.ts                   # Test environment setup
 ├── .github/               # GitHub configuration
 │   └── copilot-instructions.md # AI agent guidelines
-├── App.tsx                # Main application component
-├── types.ts              # TypeScript type definitions
-├── index.html            # HTML template with Tailwind config
+├── index.html             # HTML template with Tailwind config
+├── index.tsx              # Application entry point
+├── karma.conf.cjs         # Karma test runner configuration
+├── TESTING.md             # Detailed testing documentation
+└── vite.config.ts         # Vite configuration
+```
 └── vite.config.ts        # Vite configuration
 ```
 
@@ -116,6 +132,31 @@ Each KPI category follows this pattern:
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build locally
+- `npm run test` - Run unit tests with Jasmine and Karma
+- `npm run test:watch` - Run tests in watch mode for development
+
+## 🧪 Testing
+
+This project includes comprehensive unit testing using **Jasmine** and **Karma**.
+
+### Running Tests
+```bash
+# Run tests once
+npm test
+
+# Run tests in watch mode (for development)
+npm run test:watch
+```
+
+### Test Coverage
+- ✅ 27 passing tests
+- Component logic validation
+- Data structure testing
+- DOM manipulation testing
+- CSS class validation
+- Application layout testing
+
+For detailed testing documentation, see [TESTING.md](./TESTING.md).
 
 ## 🎯 Customization
 

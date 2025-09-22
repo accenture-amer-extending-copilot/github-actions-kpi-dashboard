@@ -1,0 +1,5 @@
+{
+  "name": "GitHub & GitHub Actions KPI Dashboard",
+  "description": "A dashboard to visualize key performance indicators for development, collaboration, automation, and security in GitHub and GitHub Actions, based on provided metrics.",
+  "requestFramePermissions": []
+}

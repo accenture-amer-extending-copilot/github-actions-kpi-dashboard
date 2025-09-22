@@ -22,8 +22,8 @@ export const mergedPRsPerWeek: TrendData[] = [
 
 // Collaboration Data
 export const closedVsOpenIssues: PieChartData[] = [
-  { name: 'Closed', value: 350, fill: '#48bb78' },
-  { name: 'Open', value: 80, fill: '#f56565' },
+  { name: 'Closed', value: 350, fill: '#2DCCCD' },
+  { name: 'Open', value: 80, fill: '#FF6B35' },
 ];
 
 // Automation Data
@@ -37,14 +37,14 @@ export const workflowsPerWeek: TrendData[] = [
 ];
 
 export const pipelineSuccessRate: PieChartData[] = [
-    { name: 'Success', value: 92, fill: '#48bb78' },
-    { name: 'Failure', value: 8, fill: '#f56565' },
+    { name: 'Success', value: 92, fill: '#2DCCCD' },
+    { name: 'Failure', value: 8, fill: '#FF6B35' },
 ];
 
 // Security Data
 export const vulnerabilitiesStatus: PieChartData[] = [
-  { name: 'Closed', value: 120, fill: '#48bb78' },
-  { name: 'Open', value: 25, fill: '#f6e05e' },
+  { name: 'Closed', value: 120, fill: '#2DCCCD' },
+  { name: 'Open', value: 25, fill: '#F8D568' },
 ];
 
 // GitHub Copilot Data
@@ -73,14 +73,14 @@ export const copilotSuggestionsPerWeek: TrendData[] = [
 ];
 
 export const copilotLanguageUsage: CopilotLanguageData[] = [
-  { name: 'TypeScript', value: 35, fill: '#007ACC', usage: 850, acceptance: 68 },
-  { name: 'JavaScript', value: 28, fill: '#F7DF1E', usage: 680, acceptance: 62 },
-  { name: 'Python', value: 18, fill: '#3776AB', usage: 425, acceptance: 58 },
-  { name: 'Java', value: 12, fill: '#ED8B00', usage: 290, acceptance: 55 },
-  { name: 'C#', value: 7, fill: '#239120', usage: 165, acceptance: 60 },
+  { name: 'TypeScript', value: 35, fill: '#004481', usage: 850, acceptance: 68 },
+  { name: 'JavaScript', value: 28, fill: '#1464A0', usage: 680, acceptance: 62 },
+  { name: 'Python', value: 18, fill: '#5BBDF0', usage: 425, acceptance: 58 },
+  { name: 'Java', value: 12, fill: '#2DCCCD', usage: 290, acceptance: 55 },
+  { name: 'C#', value: 7, fill: '#F8D568', usage: 165, acceptance: 60 },
 ];
 
 export const copilotProductivityMetrics: PieChartData[] = [
-  { name: 'Copilot Generated', value: 42, fill: '#4fd1c5' },
+  { name: 'Copilot Generated', value: 42, fill: '#5BBDF0' },
   { name: 'Manual Code', value: 58, fill: '#a0aec0' },
 ];

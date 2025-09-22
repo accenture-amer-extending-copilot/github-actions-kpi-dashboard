@@ -4,6 +4,7 @@ import { DevelopmentSection } from './components/DevelopmentSection';
 import { CollaborationSection } from './components/CollaborationSection';
 import { AutomationSection } from './components/AutomationSection';
 import { SecuritySection } from './components/SecuritySection';
+import { CopilotSection } from './components/CopilotSection';
 import { GithubIcon } from './components/icons';
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <CollaborationSection />
           <AutomationSection />
           <SecuritySection />
+          <CopilotSection />
         </div>
       </main>
       <footer className="text-center py-4 text-text-secondary text-sm">
